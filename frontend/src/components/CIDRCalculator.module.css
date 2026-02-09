@@ -1,0 +1,109 @@
+.container {
+    width: 100%;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.controls {
+    display: flex;
+    align-items: flex-end;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    background: #f1f5f9;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.inputGroup label {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    background: #ffffff;
+    border: 1px solid var(--card-border);
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+.range {
+    width: 100%;
+    accent-color: var(--success);
+    height: 2rem;
+    cursor: pointer;
+}
+
+.button {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+    background: var(--accent-gradient);
+    color: white;
+    margin-bottom: 2px;
+    transition: transform 0.1s;
+}
+
+.button:active {
+    transform: scale(0.96);
+}
+
+.spin {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background: #f8fafc;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--card-border);
+}
+
+.label {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.value {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--success);
+    font-family: 'Monaco', monospace;
+}
+
+.error {
+    color: #fca5a5;
+    background: rgba(239, 68, 68, 0.1);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}

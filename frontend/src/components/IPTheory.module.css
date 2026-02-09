@@ -1,0 +1,132 @@
+.container {
+    background: #ffffff;
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-top: 2rem;
+    color: var(--text-primary);
+    box-shadow: var(--glass-shadow);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--card-border);
+}
+
+.icon {
+    color: var(--accent-gradient);
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.content {
+    line-height: 1.6;
+}
+
+.intro {
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background: #f8fafc;
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--accent-gradient);
+    font-size: 1.1rem;
+}
+
+.card ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    color: var(--text-secondary);
+}
+
+.card li {
+    margin-bottom: 0.5rem;
+}
+
+.validationSection h3 {
+    color: var(--accent-gradient);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.validationSection ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.2rem;
+    color: var(--text-secondary);
+}
+
+.validationSection li {
+    margin-bottom: 0.5rem;
+}
+
+.examples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-family: monospace;
+    font-size: 0.95rem;
+}
+
+.valid {
+    color: #166534;
+    background: #dcfce7;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: 1px solid #bbf7d0;
+}
+
+.invalid {
+    color: #991b1b;
+    background: #fee2e2;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: 1px solid #fecaca;
+}
+
+code {
+    background: #f1f5f9;
+    padding: 0.1rem 0.3rem;
+    border-radius: 4px;
+    font-family: inherit;
+    color: #0f172a;
+    border: 1px solid #e2e8f0;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.divider {
+    margin: 3rem 0;
+    border: none;
+    border-top: 1px solid var(--card-border);
+}
